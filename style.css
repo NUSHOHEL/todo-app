@@ -84,7 +84,7 @@ body {
   position: relative;
 }
 .deleteIcon {
-  background-image: url(/img/Layer\ 2.png);
+  background-image: url(./img/Layer\ 2.png);
   background-repeat: no-repeat;
   object-fit: contain;
   background-position: center;
