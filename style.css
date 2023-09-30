@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, #333 80%, #0d0d0d 20%);
+}
+.logo {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 72px;
+}
+.logo p {
+  font-size: 40px;
+  font-weight: 900;
+  color: #4ea8de;
+}
+.logo img {
+  width: 22px;
+  height: 36px;
+}
+.logo span {
+  color: #5e60ce;
+}
+
+.inputField form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.inputField form > input {
+  width: 30vw;
+  outline: none;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+.btn {
+  background-color: #1e6f9f;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  padding: 16px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.btn img {
+  width: 16px;
+  height: 16px;
+}
+.summary {
+  width: 736px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4ea8de;
+}
+#todoContainer {
+  width: 736px;
+  margin: 60px auto;
+  color: #f2f2f2;
+}
+.todoList {
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  margin: 12px 10px;
+  border-radius: 8px;
+  position: relative;
+}
+.deleteIcon {
+  background-image: url(/img/Layer\ 2.png);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  background-size: 40%;
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+}
+.label {
+  width: 90%;
+  overflow-wrap: break-word;
+  color: #f2f2f2;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+input[type="radio"] {
+  height: 24px;
+  width: 24px;
+  border: 2px solid red;
+}
