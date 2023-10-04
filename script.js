@@ -14,11 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
       todoList.className = "todoList";
 
       const taskList = document.createElement("input");
-      taskList.type = "radio";
+      taskList.type = "checkbox";
       taskList.className = "inputField";
+      taskList.id = `${todos[i].id}`;
+      taskList.checked = todos[i].completed;
+
+      taskList.addEventListener("change",  ()=> {
+        todos[i].completed = !todos[i].completed;
+        localStorage.setItem("todo", JSON.stringify(todos));
+      });
 
       const taskLabel = document.createElement("label");
       taskLabel.className = "label";
+      taskLabel.htmlFor = `${todos[i].id}`;
       taskLabel.textContent = todos[i].task;
 
       const button = document.createElement("button");
