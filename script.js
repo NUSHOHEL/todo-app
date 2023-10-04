@@ -19,9 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
       taskList.id = `${todos[i].id}`;
       taskList.checked = todos[i].completed;
 
-      taskList.addEventListener("change",  ()=> {
+      taskList.addEventListener("change", () => {
         todos[i].completed = !todos[i].completed;
         localStorage.setItem("todo", JSON.stringify(todos));
+        taskLabel.classList.toggle("complete", todos[i].completed);
       });
 
       const taskLabel = document.createElement("label");
