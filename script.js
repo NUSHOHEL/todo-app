@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       taskLabel.className = "label";
       taskLabel.htmlFor = `${todos[i].id}`;
       taskLabel.textContent = todos[i].task;
-
+      taskLabel.classList.toggle("complete", todos[i].completed);
       const button = document.createElement("button");
       button.className = "deleteIcon";
 
